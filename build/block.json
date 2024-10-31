@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ultradevs/random-image-block",
+  "version": "0.1.0",
+  "title": "Random Image Block",
+  "category": "widgets",
+  "icon": "image-flip-horizontal",
+  "description": "Display random images from a gallery.",
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "style": true,
+        "width": true
+      }
+    }
+  },
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "imageAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageObjectFit": {
+      "type": "string",
+      "default": ""
+    },
+    "captionStyle": {
+      "type": "object",
+      "default": {
+        "color": "#ffffff",
+        "fontSize": 16,
+        "fontSizeUnit": "px",
+        "showCaptionOn": "",
+        "captionOverlay": {
+          "enabled": "no",
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        "padding": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px"
+          },
+          "tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        }
+      }
+    },
+    "imageSize": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "width": 100,
+          "widthUnit": "%",
+          "height": 100,
+          "heightUnit": "%"
+        },
+        "tablet": {
+          "width": "",
+          "widthUnit": "%",
+          "height": "",
+          "heightUnit": "%"
+        },
+        "mobile": {
+          "width": "",
+          "widthUnit": "%",
+          "height": "",
+          "heightUnit": "%"
+        }
+      }
+    }
+  },
+  "textdomain": "random-image-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

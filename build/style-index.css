@@ -1,0 +1,35 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.ud-random-img-block-pro.ud-radmon-img-block-caption-over-img .ud-random-img-block__content {
+  position: absolute;
+  top: var(--ud-rib-overlay-position-y, 50%);
+  left: var(--ud-rib-overlay-position-x, 50%);
+  z-index: 999;
+  transform: translate(var(--ud-rib-overlay-position-t-y, -50%), var(--ud-rib-overlay-position-t-x, -50%));
+}
+.ud-random-img-block-caption-on-hover {
+  transition: all 0.3s ease-in-out;
+}
+.ud-random-img-block-caption-on-hover .ud-random-img-block__content-caption {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.ud-random-img-block-caption-on-hover:hover .ud-random-img-block__content-caption {
+  opacity: 1;
+  visibility: visible;
+}
+.ud-random-img-block__images {
+  position: relative;
+}
+.ud-random-img-block__images img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.ud-random-img-block__content figcaption {
+  font-size: inherit;
+  text-align: inherit !important;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
